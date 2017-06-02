@@ -30,6 +30,7 @@ class AppListViewController : UITableViewController {
         aCell.webUrl?.text = appInfo[indexPath.row].webUrl
         aCell.downloadCount?.text = "\(appInfo[indexPath.row].downloadCount!)"
         aCell.score?.text = "\(appInfo[indexPath.row].score!)"
+        aCell.desc?.text = appInfo[indexPath.row].desc
         
         let url = appInfo[indexPath.row].thumbnailUrl
         let imgCellUrl : URL! = URL (string: url!)
@@ -64,6 +65,7 @@ class AppListViewController : UITableViewController {
                 avo.webUrl = r["webUrl"] as? String
                 avo.downloadCount = r["downloadCount"] as? Int
                 avo.score = r["score"] as? Float
+                avo.desc = r["description"] as? String
 
                 appInfo.append(avo)
             }

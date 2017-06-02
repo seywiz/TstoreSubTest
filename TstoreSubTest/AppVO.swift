@@ -18,6 +18,7 @@ class AppVO {
     var downloadCount : Int?
     var webUrl : String?
     var score : Float?
+    var desc : String?
     
     
 }

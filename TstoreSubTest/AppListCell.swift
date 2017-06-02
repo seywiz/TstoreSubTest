@@ -16,7 +16,6 @@ class AppListCell : UITableViewCell {
     @IBOutlet var webUrl: UILabel?  // URL
     @IBOutlet var downloadCount: UILabel? //다운로드수
     @IBOutlet var score: UILabel? //평점
-    
-    
+    @IBOutlet var desc: UILabel? // 간단 설명
     
 }
