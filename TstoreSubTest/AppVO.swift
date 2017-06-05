@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class AppVO {
     
@@ -20,5 +21,5 @@ class AppVO {
     var score : Float?
     var desc : String?
     
-    
+    var thumbnailImage : UIImage?
 }
